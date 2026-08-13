@@ -1,0 +1,9 @@
+keys:
+  - &default age1x6q9jlctwt7429gfrvzjvk36g4wssq0cr2ueqtjle5rlgqav53vsnrzqy4
+  - &blinker age1pxqc5dvvfm8gffgy80pt6f7lzpehcufnsnkeqfvtnw64ht0axuvqumag59
+creation_rules:
+  - path_regex: secrets.yaml$
+    key_groups:
+      - age:
+          - *default
+          - *blinker
